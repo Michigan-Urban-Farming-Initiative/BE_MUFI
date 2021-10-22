@@ -122,6 +122,6 @@ Installs all of the dependencies after cloning project. npm ONLY!
 
 ## Issue/Bug Request
 
-- -Change to push branch
+-
 
 -
