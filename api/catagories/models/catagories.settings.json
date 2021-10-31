@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catagories",
+  "info": {
+    "name": "catagories"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "causes": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "volunteer": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "wellness": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "food": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "events": {
+      "via": "catagories",
+      "collection": "events",
+      "dominant": true
+    },
+    "kid_friendly": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "gardening": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "giveaway": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}
