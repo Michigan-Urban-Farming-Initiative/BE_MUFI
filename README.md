@@ -154,6 +154,6 @@ Installs all of the dependencies after cloning project. npm ONLY!
 
 ## Issue/Bug Request
 
--
+- deployment
 
 -
