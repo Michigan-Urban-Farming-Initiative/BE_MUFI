@@ -23,5 +23,3 @@ module.exports = ({ env }) => ({
     },
   },
 });
-
-// DATABASE_URL: postgres://pvphowjxzajsaa:210537d3c6716dae0b26309fd7604948f8914e1994782466a8b5d02d0545b6f0@ec2-52-22-81-147.compute-1.amazonaws.com:5432/d7gidct287pg7u
