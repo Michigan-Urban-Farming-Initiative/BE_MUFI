@@ -17,7 +17,7 @@
 
 ## 2️⃣ Endpoints
 
-#### Base URL https://mufi-development.herokuapp.com/
+#### Base URL https://mufi-back-end.herokuapp.com/
 
 #### Events Routes
 
