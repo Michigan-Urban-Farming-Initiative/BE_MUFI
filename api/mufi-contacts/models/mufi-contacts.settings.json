@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "mufi_contacts",
+  "info": {
+    "name": "Mufi_contacts"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "required": true,
+      "unique": false
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true,
+      "unique": false
+    },
+    "phone": {
+      "type": "string"
+    },
+    "events": {
+      "via": "mufi_contacts",
+      "collection": "events"
+    }
+  }
+}

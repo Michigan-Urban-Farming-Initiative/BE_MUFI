@@ -15,42 +15,72 @@
 
 ---
 
-## MUFI Project Overview
+## 2️⃣ Endpoints
 
-### Key Features
+#### Base URL https://mufi-back-end.herokuapp.com/
 
--
--
--
--
+#### Events Routes
+
+| Method | Endpoint        | Description                  |
+| ------ | --------------- | ---------------------------- |
+| GET    | `/events`       | Returns all events.          |
+| GET    | `/events/:id`   | Returns specific event by id |
+| GET    | `/events/count` | Returns count of events.     |
+| POST   | `/events`       | Create event                 |
+| DELETE | `/events/:id`   | Delete an event              |
+| PUT    | `/events/:id`   | Updates event                |
+
+#### Press Release Routes
+
+| Method | Endpoint         | Description               |
+| ------ | ---------------- | ------------------------- |
+| GET    | `/presses`       | Returns all PR's.         |
+| GET    | `/presses/count` | Returns specific PR by id |
+| GET    | `/presses/:id`   | Returns count of PR's.    |
+| POST   | `/presses`       | Create Press release      |
+| DELETE | `/presses/:id`   | Delete Press release      |
+| PUT    | `/presses/:id`   | Update Press Release      |
+
+# Data Models
+
+#### Events
+
+    {
+    id: INTEGER,
+    event_name: STRING,
+    date: DATE,
+    start_time: TIME,
+    end_time: TIME,
+    description: RICH-TEXT,
+    location: STRING,
+    cost: DECIMAL,
+    age_restriction: BOOLEAN,
+    event_capacity: INTEGER,
+    categories: [CATEGORIES COLLECTION],
+    sponsors: [SPONSORS COLLECTION],
+    mufi_contacts: [MUFI-CONTACTS COLLECTION],
+    }
+
+---
+
+#### Press Release
+
+    {
+    id: INTEGER,
+    title: STRING,
+    date_released: DATE,
+    author: STRING,
+    article_link: STRING,
+    source: STRING,
+    image: FILE,
+
+    }
 
 ## Tech Stack
 
 #### Back end:
 
 - Strapi
--
--
-
-#### Back end deployed to:
-
----
-
-## APIs/Third Party
-
-What we used and why (Delete this once filled in)
-
--
--
--
-
-Description of the API/ Third Party
-
--
--
--
-
-## Environment Variables
 
 ## Testing
 
@@ -90,6 +120,8 @@ Installs all of the dependencies after cloning project. npm ONLY!
   - Bugfix
   - Help needed
   - Refactor
+  - Documentation (readme)
+  - Configuration
 - Naming convention should be ⇒ feature/branch-name
 - Once the branch has been merged, delete the branch in Github
 - 'Git pull origin' before making commits
@@ -122,6 +154,6 @@ Installs all of the dependencies after cloning project. npm ONLY!
 
 ## Issue/Bug Request
 
--
--
+- deployment
+
 -

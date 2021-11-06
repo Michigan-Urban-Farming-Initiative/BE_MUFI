@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sponsors",
+  "info": {
+    "name": "Sponsors"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sponsor_name": {
+      "type": "string",
+      "required": true
+    },
+    "website_link": {
+      "type": "string",
+      "required": false,
+      "unique": true
+    },
+    "sponsor_email": {
+      "type": "email",
+      "unique": true
+    },
+    "sponsor_address": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "sponsor_contact_name": {
+      "type": "string",
+      "unique": true
+    },
+    "sponsor_phone": {
+      "type": "string",
+      "unique": true
+    },
+    "events": {
+      "via": "sponsors",
+      "collection": "events",
+      "dominant": true
+    }
+  }
+}

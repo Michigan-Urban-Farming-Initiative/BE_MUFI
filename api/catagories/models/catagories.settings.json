@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catagories",
+  "info": {
+    "name": "categories",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "events": {
+      "via": "catagories",
+      "collection": "events",
+      "dominant": true
+    }
+  }
+}
