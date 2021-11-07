@@ -105,7 +105,7 @@ Installs all of the dependencies after cloning project. npm ONLY!
 ## Staging
 
 - Only Development branch merged into staging branch.
-- 2 Reviewers before merge.
+- 1 Reviewers before merge.
 
 ## Development
 
@@ -124,7 +124,6 @@ Installs all of the dependencies after cloning project. npm ONLY!
   - Configuration
 - Naming convention should be ⇒ feature/branch-name
 - Once the branch has been merged, delete the branch in Github
-- 'Git pull origin' before making commits
 
 ### Pull Request Guidelines
 
@@ -154,6 +153,6 @@ Installs all of the dependencies after cloning project. npm ONLY!
 
 ## Issue/Bug Request
 
-- deployment
+-
 
 -
